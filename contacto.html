@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — FitTitan</title>
+<meta name="description" content="¿Tienes preguntas sobre nuestros productos o tu pedido? Escríbenos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">FITTITAN</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <a class="nav-cta" href="https://fittitan-fitness.myshopify.com/" target="_blank" rel="noopener">Comprar</a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <div class="contact-wrap">
+    <div>
+      <h1>Contacto</h1>
+      <p>¿Tienes preguntas sobre nuestros productos o tu pedido?</p>
+      <p>Escríbenos y te responderemos lo antes posible.</p>
+    </div>
+    <form class="contact-form" action="https://formsubmit.co/hectoreduardosanchezcalderon@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Nuevo mensaje de contacto – FitTitan">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://h4ct0r.github.io/fittitan/gracias.html">
+      <div class="form-row">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="Nombre" required>
+        </div>
+        <div>
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="Apellido" required>
+        </div>
+      </div>
+      <div>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="Correo electrónico" required>
+      </div>
+      <div>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="Mensaje" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>&copy; 2026 FitTitan. Todos los derechos reservados.</span>
+    <ul class="footer-links">
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="https://fittitan-fitness.myshopify.com/" target="_blank" rel="noopener">Tienda</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
