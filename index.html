@@ -143,7 +143,7 @@
       <input type="hidden" name="_subject" value="Nueva suscripción — FitTitan">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://h4ct0r.github.io/fittitan/gracias.html">
-      <input type="email" name="email" placeholder="tu@correo.com" required>
+      <input type="email" id="newsletter-email" name="email" placeholder="tu@correo.com" required>
       <button type="submit">Avisarme</button>
     </form>
   </div>
@@ -163,6 +163,16 @@
     </ul>
   </div>
 </footer>
+
+<script src="supabase.js"></script>
+<script>
+  document.querySelector('.subscribe-form').addEventListener('submit', function () {
+    saveLead({
+      tipo: 'newsletter',
+      email: document.getElementById('newsletter-email').value
+    });
+  });
+</script>
 
 </body>
 </html>
